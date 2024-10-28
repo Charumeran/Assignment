@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 "node_modules/"  # .gitignore‚Énode_modules‚ð’Ç‰Á
+"node_modules/" 
+"node_modules/"  # .gitignore‚Énode_modules‚ð’Ç‰Á
