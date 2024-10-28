@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/Assignment/',
   plugins: [react()],
+  build: {sourcemap: true,},
 })
