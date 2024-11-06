@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage";
 import { Post } from "./types";
 import PostPage from "./PostPage";
@@ -14,7 +14,7 @@ const App = () => {
     };
 
     return(
-        <Router>
+        <BrowserRouter basename={ process.env.NODE_ENV === "production" ? "/Assignment" : "/"}>
             <div>
                 <nav>
                     <Link to = "/search"></Link>
@@ -37,7 +37,7 @@ const App = () => {
                     />
                 </Routes>
             </div>
-        </Router>
+        </BrowserRouter>
     )
 }
 
