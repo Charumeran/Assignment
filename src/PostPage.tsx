@@ -33,7 +33,7 @@ const PostPage: React.FC<PostPageProps> = ( { addPost }) => {
             setIncome("");
             setCategory(null);
             setIsCategoryOpen(false);
-            navigate("/");
+            navigate(process.env.NODE_ENV === "production" ? "/Assignment/" : "/");
         }else{
             alert("カテゴリ、年収、タイトルは必須項目です。")
         }
