@@ -14,7 +14,7 @@ const App = () => {
     };
 
     return(
-        <BrowserRouter basename={ process.env.NODE_ENV === "production" ? "/Assignment/" : "/"}>
+        <BrowserRouter basename={import.meta.env.VITE_BASE_URL}>
             <div>
                 <nav>
                     <Link to = "/search"></Link>
